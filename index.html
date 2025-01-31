@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
+    <title>How Safe Are You?</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,11 +45,31 @@
         h2 {
             color: #34495e;
         }
-        .contact-info {
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        .task-order {
             background-color: #f8f9fa;
-            padding: 15px;
+            padding: 20px;
             border-radius: 5px;
             margin-top: 20px;
+        }
+        .task-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #e1e4e8;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .important-note {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
         }
         /* Make the layout responsive */
         @media (max-width: 600px) {
@@ -65,27 +85,36 @@
 </head>
 <body>
     <div class="container">
-        <!-- Updated image filenames -->
         <img src="Unimelb Logo.png" alt="University of Melbourne Logo" class="corner-image left-image">
         <img src="AND Lab Logo.png" alt="AND Lab Logo" class="corner-image right-image">
-
+        
         <h1>How Safe Are You?</h1>
         <p>Thank you for agreeing to participate in our study.</p>
         
         <h2>Instructions</h2>
         <p>The last number of your participant ID will determine the order in which you complete the tasks.</p>
-        <p>Please note: both tasks lead to a questionnaire once completed. <b>You only need to comlplete the questionnaire once.</b> If you have already completed the questionnaire after the first task, you can exist the second task once the game has been completed.</p>
         
-        <div class="Task-Order">
-            <h3>Even number</h3>
-            <p>Start with this task</p>
-            <p>link</p>
-            <p>Once completed, return to this page and complete the next task</a></p
-                                                                                
-            <h3>Odd number</h3>
-            <p>Start with this task</p>
-            <p>link</p>
-            <p>Once completed, return to this page and complete the previous task</a></p                                                                         
+        <div class="important-note">
+            <strong>Important:</strong> Both tasks lead to a questionnaire once completed. 
+            <strong>You only need to complete the questionnaire once.</strong> 
+            If you have already completed the questionnaire after the first task, 
+            you can exit the second task once the game has been completed.
+        </div>
+        
+        <div class="task-order">
+            <div class="task-section">
+                <h3>Even number</h3>
+                <p>Start with this task:</p>
+                <p><a href="#">[Insert link here]</a></p>
+                <p>Once completed, return to this page and complete the next task.</p>
+            </div>
+            
+            <div class="task-section">
+                <h3>Odd number</h3>
+                <p>Start with this task:</p>
+                <p><a href="#">[Insert link here]</a></p>
+                <p>Once completed, return to this page and complete the previous task.</p>
+            </div>
         </div>
     </div>
 </body>
