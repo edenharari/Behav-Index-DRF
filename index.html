@@ -22,9 +22,9 @@
         }
         .corner-image {
             position: absolute;
-            width: 80px;  /* Fixed size for both images */
-            height: 80px; /* Fixed size for both images */
-            object-fit: contain; /* This maintains aspect ratio */
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
             padding: 10px;
         }
         .left-image {
@@ -39,7 +39,7 @@
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
-            margin-top: 70px; /* Make room for the images */
+            margin-top: 140px;
             text-align: center;
         }
         h2 {
@@ -54,20 +54,20 @@
         /* Make the layout responsive */
         @media (max-width: 600px) {
             .corner-image {
-                width: 60px;
-                height: 60px;
+                width: 120px;
+                height: 120px;
             }
             h1 {
-                margin-top: 50px;
+                margin-top: 100px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Add your images here - replace "image1.png" and "image2.png" with your actual image filenames -->
-        <img src="Unimelb Logo.png" alt="Left corner image" class="corner-image left-image">
-        <img src="AND Lab Logo.png" alt="Right corner image" class="corner-image right-image">
+        <!-- Updated image filenames -->
+        <img src="Unimelb Logo.png" alt="University of Melbourne Logo" class="corner-image left-image">
+        <img src="AND Lab Logo.png" alt="AND Lab Logo" class="corner-image right-image">
 
         <h1>Welcome to My Website</h1>
         <p>Hello! This is my personal website hosted on GitHub Pages.</p>
