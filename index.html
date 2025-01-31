@@ -19,24 +19,28 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: relative;
-            margin-top: 60px;  /* Make room for images */
         }
         .corner-image {
             position: absolute;
-            top: -50px;
-            width: 100px;  /* Adjust size as needed */
-            height: auto;
+            width: 80px;  /* Fixed size for both images */
+            height: 80px; /* Fixed size for both images */
+            object-fit: contain; /* This maintains aspect ratio */
+            padding: 10px;
         }
         .left-image {
-            left: -50px;
+            top: 0;
+            left: 0;
         }
         .right-image {
-            right: -50px;
+            top: 0;
+            right: 0;
         }
         h1 {
             color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
+            margin-top: 70px; /* Make room for the images */
+            text-align: center;
         }
         h2 {
             color: #34495e;
@@ -48,15 +52,13 @@
             margin-top: 20px;
         }
         /* Make the layout responsive */
-        @media (max-width: 900px) {
+        @media (max-width: 600px) {
             .corner-image {
-                width: 60px;  /* Smaller on mobile */
+                width: 60px;
+                height: 60px;
             }
-            .left-image {
-                left: -30px;
-            }
-            .right-image {
-                right: -30px;
+            h1 {
+                margin-top: 50px;
             }
         }
     </style>
