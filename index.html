@@ -18,6 +18,20 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            margin-top: 60px;  /* Make room for images */
+        }
+        .corner-image {
+            position: absolute;
+            top: -50px;
+            width: 100px;  /* Adjust size as needed */
+            height: auto;
+        }
+        .left-image {
+            left: -50px;
+        }
+        .right-image {
+            right: -50px;
         }
         h1 {
             color: #2c3e50;
@@ -33,10 +47,26 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        /* Make the layout responsive */
+        @media (max-width: 900px) {
+            .corner-image {
+                width: 60px;  /* Smaller on mobile */
+            }
+            .left-image {
+                left: -30px;
+            }
+            .right-image {
+                right: -30px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Add your images here - replace "image1.png" and "image2.png" with your actual image filenames -->
+        <img src="image1.png" alt="Left corner image" class="corner-image left-image">
+        <img src="image2.png" alt="Right corner image" class="corner-image right-image">
+
         <h1>Welcome to My Website</h1>
         <p>Hello! This is my personal website hosted on GitHub Pages.</p>
         
